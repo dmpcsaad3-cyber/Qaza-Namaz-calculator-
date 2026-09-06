@@ -6,6 +6,8 @@ workflows:
     environment:
       node: 22
       java: 21
+      vars:
+        JAVA_HOME: /Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home
     scripts:
       - name: Install dependencies
         script: |
@@ -20,6 +22,18 @@ workflows:
           npx cap sync android
       - name: Build Android Debug APK
         script: |
+          if [ -d "/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home" ]; then
+            export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home"
+          elif [ -x "/usr/libexec/java_home" ]; then
+            export JAVA_HOME=$(/usr/libexec/java_home -v 21 2>/dev/null || /usr/libexec/java_home)
+          elif [ -d "/usr/lib/jvm/java-21-openjdk-amd64" ]; then
+            export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64"
+          fi
+          if [ -n "$JAVA_HOME" ]; then
+            export PATH="$JAVA_HOME/bin:$PATH"
+          fi
+          echo "Active Java Version:"
+          java -version
           cd android
           chmod +x gradlew
           ./gradlew assembleDebug
