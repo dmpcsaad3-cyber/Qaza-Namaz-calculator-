@@ -26,4 +26,4 @@ workflows:
           - dmpcsaad3@gmail.com
         notify:
           success: true
-          failure: true
+          failure: true 
