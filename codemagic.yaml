@@ -2,14 +2,14 @@ workflows:
   android-apk-release:
     name: Qaza Namaz Tracker - Android APK
     max_build_duration: 30
-    instance_type: linux_x2
+    instance_type: mac_mini
     environment:
       node: 20
       java: 17
     scripts:
       - name: Install dependencies
         script: |
-          npm ci --legacy-peer-deps || npm install --legacy-peer-deps
+          npm ci --legacy-peer-deps || npm install
       - name: Build Web App & Sync Android
         script: |
           npm run build
