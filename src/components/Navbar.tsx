@@ -41,8 +41,9 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-emerald-600 via-teal-600 to-emerald-500 p-0.5 shadow-lg shadow-emerald-950/60 flex items-center justify-center text-white">
             <img
               src="/icon.svg"
-              alt="Logo"
-              className="w-8 h-8 object-contain"
+              alt="Prayer Mat Janamaz Logo"
+              className="w-8 h-8 object-contain drop-shadow"
+              referrerPolicy="no-referrer"
               onError={(e) => {
                 // Fallback if svg fails
                 (e.target as HTMLElement).style.display = 'none';

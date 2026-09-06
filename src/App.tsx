@@ -9,6 +9,7 @@ import { HistoryLog } from './components/HistoryLog';
 import { ApkGuideModal } from './components/ApkGuideModal';
 import { QazaGuideModal } from './components/QazaGuideModal';
 import { BackupModal } from './components/BackupModal';
+import { DawatEIslamiSection } from './components/DawatEIslamiSection';
 import {
   loadQazaState,
   saveQazaState,
@@ -346,6 +347,9 @@ export default function App() {
             />
           </div>
         )}
+
+        {/* Dawat-e-Islami Islamic Services & Promotional Section */}
+        <DawatEIslamiSection language={language} />
       </main>
 
       {/* Offline Toast if disconnected */}
