@@ -1,0 +1,11 @@
+{
+  "appId": "com.qazanamaz.tracker",
+  "appName": "Qaza Namaz Tracker",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "backgroundColor": "#042f2e"
+  }
+}

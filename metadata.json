@@ -1,0 +1,6 @@
+{
+  "name": "Qaza Namaz Tracker & Calculator",
+  "description": "Comprehensive Islamic Qaza Namaz (قضاء نماز) calculator, daily tracker, estimated completion planner, and direct APK/Codemagic mobile export setup.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
