@@ -1,8 +1,8 @@
 workflows:
   android-apk-release:
-    name: Qaza Namaz Tracker - Android APK
+    name: Qaza e Umri Tracker - Android APK
     max_build_duration: 30
-    instance_type: linux_x2
+    instance_type: mac_mini_m2
     environment:
       node: 20
     scripts:
