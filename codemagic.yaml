@@ -13,6 +13,10 @@ workflows:
       - name: Build Web App & Sync Android
         script: |
           npm run build
+          if [ ! -f "android/gradlew" ]; then
+            rm -rf android
+            npx cap add android
+          fi
           npx cap sync android
       - name: Build Android Debug APK
         script: |

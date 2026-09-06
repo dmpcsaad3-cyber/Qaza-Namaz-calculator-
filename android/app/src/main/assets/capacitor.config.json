@@ -1,6 +1,6 @@
 {
-	"appId": "com.qazanamaz.tracker",
-	"appName": "Qaza Namaz Tracker",
+	"appId": "com.qazaeumri.tracker",
+	"appName": "Qaza e Umri Tracker",
 	"webDir": "dist",
 	"server": {
 		"androidScheme": "https"

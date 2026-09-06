@@ -1,4 +1,4 @@
-package com.qazanamaz.tracker;
+package com.qazaeumri.tracker;
 
 import com.getcapacitor.BridgeActivity;
 
