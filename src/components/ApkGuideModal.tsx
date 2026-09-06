@@ -151,13 +151,13 @@ export const ApkGuideModal: React.FC<ApkGuideModalProps> = ({
                   ہم نے پروجیکٹ میں <strong>GitHub Actions</strong> فائل بھی شامل کر دی ہے۔ جیسے ہی آپ کوڈ GitHub پر پش کریں گے، GitHub خود بخود آپ کے لیے APK تیار کر دے گا۔
                   <br />
                   اپنی GitHub ریپوزٹری میں جائیں ➔ اوپر <strong>"Actions"</strong> ٹیب پر کلک کریں ➔ لیٹسٹ بلڈ پر کلک کر کے{' '}
-                  <span className="font-mono text-emerald-300 font-bold">qaza-namaz-tracker-apk</span> فائل ایک کلک میں ڈاؤن لوڈ کر لیں! Codemagic کی بھی ضرورت نہیں۔
+                  <span className="font-mono text-emerald-300 font-bold">qaza-e-umri-tracker-apk</span> فائل ایک کلک میں ڈاؤن لوڈ کر لیں! Codemagic کی بھی ضرورت نہیں۔
                 </>
               ) : (
                 <>
                   We also added a pre-configured <strong>GitHub Actions</strong> workflow (<code>.github/workflows/build-apk.yml</code>).
                   <br />
-                  Whenever you push your code to GitHub, GitHub will automatically build your APK! Just open your GitHub repo, go to the <strong>"Actions"</strong> tab, open the latest run, and download the <span className="font-mono text-emerald-300 font-bold">qaza-namaz-tracker-apk</span> artifact directly!
+                  Whenever you push your code to GitHub, GitHub will automatically build your APK! Just open your GitHub repo, go to the <strong>"Actions"</strong> tab, open the latest run, and download the <span className="font-mono text-emerald-300 font-bold">qaza-e-umri-tracker-apk</span> artifact directly!
                 </>
               )}
             </p>

@@ -52,7 +52,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div>
             <div className="flex items-center gap-2">
               <h1 className="text-base sm:text-lg font-extrabold text-white tracking-tight flex items-center gap-1.5">
-                <span>{language === 'ur' ? 'قضاء نماز ٹریکر' : 'Qaza Namaz Tracker'}</span>
+                <span>{language === 'ur' ? 'قضاءِ عمری ٹریکر' : 'Qaza e Umri Tracker'}</span>
               </h1>
               {!isOnline && (
                 <span className="flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 text-[10px] font-medium border border-amber-500/30">

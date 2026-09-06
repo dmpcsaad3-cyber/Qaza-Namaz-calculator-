@@ -14,9 +14,9 @@ export default defineConfig(() => {
         includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'icon.svg', 'pwa-192x192.png', 'pwa-512x512.png'],
         manifest: {
           id: '/',
-          name: 'Qaza Namaz Tracker & Calculator',
-          short_name: 'QazaTracker',
-          description: 'Islamic Qaza Namaz calculator, progress tracker, and daily planner with APK build support.',
+          name: 'Qaza e Umri Tracker',
+          short_name: 'Qaza e Umri',
+          description: 'Islamic Qaza e Umri calculator, progress tracker, and daily planner with APK build support.',
           theme_color: '#064e3b',
           background_color: '#042f2e',
           display: 'standalone',
