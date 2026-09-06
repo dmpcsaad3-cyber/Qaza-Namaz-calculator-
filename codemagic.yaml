@@ -36,7 +36,8 @@ workflows:
           java -version
           cd android
           chmod +x gradlew
-          ./gradlew assembleDebug
+          rm -f app/src/main/res/mipmap-anydpi-v26/*.png 2>/dev/null || true
+          ./gradlew clean assembleDebug --no-daemon
     artifacts:
       - android/app/build/outputs/apk/debug/*.apk
       - android/app/build/outputs/apk/**/*.apk

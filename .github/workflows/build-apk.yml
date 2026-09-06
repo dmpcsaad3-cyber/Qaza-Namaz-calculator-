@@ -44,7 +44,8 @@ jobs:
         run: |
           cd android
           chmod +x gradlew
-          ./gradlew assembleDebug
+          rm -f app/src/main/res/mipmap-anydpi-v26/*.png 2>/dev/null || true
+          ./gradlew clean assembleDebug --no-daemon
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
